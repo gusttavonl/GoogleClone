@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Equivale a 500px mais ou menos*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribui uniformemente, primeiro alinhado com o inicio e depois alinhado com o final */
+  padding: 20px 30px;
+  align-items: center;
+}
+.header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+.header a:hover {
+  text-decoration: underline;
+}
+.headerright {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+.headerright > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.body {
+  flex: 1;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.body > img {
+  object-fit: contain; /* faz o direcionamento para a imagem nao ficar cortada */
+  height: 100px;
+}
